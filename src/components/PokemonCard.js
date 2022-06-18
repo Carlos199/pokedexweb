@@ -36,7 +36,6 @@ const PokemonCard = (props) => {
   const { pokemon, image } = props;
 
   const { id, name } = pokemon;
-
   return (
     <Grid item xs={12} sm={2} key={id}>
       <Link to={"/pokemon/" + id} className={classes.link}>

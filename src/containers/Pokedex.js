@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
 const Pokedex = () => {
   const classes = useStyles();
   const [pokemonData, setPokemonData] = useState([]);
+
   useEffect(() => {
     axios(POKEMON_API_URL + "?limit=800").then((response) => {
       if (response.status >= 200 && response.status < 300) {
